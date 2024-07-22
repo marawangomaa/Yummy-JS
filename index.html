@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/icon/logo.png">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/main.css"> <!--? main css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--? Bootstrap file -->
+    <link rel="stylesheet" href="css/all.min.css"> <!--? FA file -->
+</head>
+<body>
+    
+    <div class="loading d-none d-flex justify-content-center align-items-center">
+        <div class="loader "></div>
+    </div>
+
+    <div id="navSide" class="nav-side position-fixed vh-100 d-flex top-0 ">
+        <div id="navInner" class="nav-inner d-flex justify-content-between flex-column">
+            <div class="links">
+                <ul id="linksUl" class="linksUl position-relative mt-2">
+                    <li class="navL pb-3 active" id="search">Search</li>
+                    <li class="navL pb-3" id="categories">Categories</li>
+                    <li class="navL pb-3" id="area">Area</li>
+                    <li class="navL pb-3" id="ingredients">Ingredients</li>
+                    <li class="navL pb-3" id="contactUs">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights<br>
+                    Reserved.</p>
+                
+            </div>
+        </div>
+        <div id="navOuter" class="nav-outer bg-white d-flex flex-column text-center justify-content-between py-4 px-2 text-black">
+                <img src="imgs/icon/logo.png" class="nav-icon" alt="nav icon">
+
+                    <i id="settingsIcon" class="fa-solid fa-bars fa-2x list-icon"></i>
+
+                <div class="">
+                    <i class="fa-solid fa-globe w-100"></i>
+                    <i class="fa-solid fa-share-nodes w-100"></i>
+                </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div id="searchArea" class="search d-none d-flex justify-content-center mt-4">
+                <input class="form-control text-white bg-main px-3" list="datalistOptions" id="searchByFirstName" placeholder="Search By First Name...">
+                <input class="form-control text-white bg-main px-3" list="datalistOptions" id="searchByFirstLetter" placeholder="Search By First Letter...">
+
+            </div>
+            <div id="mealData" class="row">
+                
+            </div>
+            <div id="catData" class="row d-none">
+                
+            </div>
+            <div id="areaData" class="row py-5 g-4 d-none">
+                
+            </div>
+            <div id="ingData" class="row py-5 g-4 d-none">
+                
+            </div>
+            <div id="formData" class="container vh-100 d-flex text-center d-none">
+                <div class="row my-auto g-4">
+                    <div class="col-md-6">
+                        <input id="name" type="text" class="form-control text-white bg-main w-100" placeholder="Enter Your Name ....">
+                        <div id="nameMsg" class="msg d-none mt-2">
+                            <p class="text-dark alert alert-danger">Enter Your Name</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="email" type="email" class="form-control text-white bg-main w-100" placeholder="Enter Your Email ....">
+                        <div id="emailMsg" class="msg d-none mt-2">
+                            <p class="text-dark alert alert-danger">Email not valid *exemple@yyy.zzz</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="phone" type="phone" class="form-control text-white bg-main w-100" placeholder="Enter Your Phone ....">
+                        <div id="phoneMsg" class="msg d-none mt-2">
+                            <p class="text-dark alert alert-danger">Enter valid Phone Number</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="age" type="number" class="form-control text-white bg-main w-100" placeholder="Enter Your Age ....">
+                        <div id="ageMsg" class="msg d-none mt-2">
+                            <p class="text-dark alert alert-danger">Enter valid age</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="password" type="password" class="form-control text-white bg-main w-100" placeholder="Enter Your Password ....">
+                        <div id="pasMsg" class="msg d-none mt-2">
+                            <p class="text-dark alert alert-danger">Enter valid password *Minimum eight characters, at least one letter and special character (@$!%*?&) and one number:*</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="rePassword" type="password" class="form-control text-white bg-main w-100" placeholder="Re-password ....">
+                        <div id="rePasMsg" class="msg d-none mt-2">
+                            <p class="text-dark alert alert-danger">Enter valid re-password</p>
+                        </div>
+                    </div>
+                    <button id="subBtn" class="col-2 subBtn btn btn-outline-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="details d-none bg-details text-white">
+        <div class="container">
+            <div class="row py-5 g-4 " id="rowData">
+                
+            </div>
+        </div>
+    </div>
+
+
+   
+
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script> <!--? BootStrap js file -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script> <!--? main js file -->
+</body>
+</html>
